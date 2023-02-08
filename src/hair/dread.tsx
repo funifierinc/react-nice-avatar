@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function hairDread(props: { color: string; colorRandom: boolean }): SVGElement {
-  const { color, colorRandom } = props;
+  const { color } = props;
   return (
     <svg
       style={{
@@ -28,7 +28,7 @@ export default function hairDread(props: { color: string; colorRandom: boolean }
       </g>
       <g>
         <path
-          fill={(colorRandom && color) || 'black'}
+          fill={color || 'black'}
           stroke="#000000"
           stroke-width="3.82"
           d="M206.2,162.5L206.2,162.5c-5.2-0.7-8.9-5.5-8.2-10.7l2.3-17.5
@@ -37,7 +37,7 @@ export default function hairDread(props: { color: string; colorRandom: boolean }
       </g>
       <g>
         <path
-          fill={(colorRandom && color) || 'black'}
+          fill={color || 'black'}
           stroke="#000000"
           stroke-width="3.82"
           d="M229.4,175.4L229.4,175.4c-4.7-2.3-6.7-8-4.5-12.7l4.3-8.8
@@ -46,7 +46,7 @@ export default function hairDread(props: { color: string; colorRandom: boolean }
       </g>
       <g>
         <path
-          fill={(colorRandom && color) || 'black'}
+          fill={color || 'black'}
           stroke="#000000"
           stroke-width="3.82"
           d="M138.2,176L138.2,176c-5.6,3.3-12.9,1.3-16.1-4.3l-9.8-17
@@ -55,7 +55,7 @@ export default function hairDread(props: { color: string; colorRandom: boolean }
       </g>
       <g>
         <path
-          fill={(colorRandom && color) || 'black'}
+          fill={color || 'black'}
           stroke="#000000"
           stroke-width="3.82"
           d="M114.4,197.3L114.4,197.3c-4.6,4.6-12.1,4.6-16.7,0l-9.5-9.5
@@ -64,7 +64,7 @@ export default function hairDread(props: { color: string; colorRandom: boolean }
       </g>
       <g>
         <path
-          fill={(colorRandom && color) || 'black'}
+          fill={color || 'black'}
           stroke="#000000"
           stroke-width="3.82"
           d="M112.9,215.3L112.9,215.3c0,3-2.5,5.5-5.5,5.5H89
@@ -73,7 +73,7 @@ export default function hairDread(props: { color: string; colorRandom: boolean }
       </g>
       <g>
         <path
-          fill={(colorRandom && color) || 'black'}
+          fill={color || 'black'}
           stroke="#000000"
           stroke-width="3.82"
           d="M115,235.2L115,235.2c0,3-2.5,5.5-5.5,5.5H91.1
@@ -82,7 +82,7 @@ export default function hairDread(props: { color: string; colorRandom: boolean }
       </g>
       <g>
         <path
-          fill={(colorRandom && color) || 'black'}
+          fill={color || 'black'}
           stroke="#000000"
           stroke-width="3.82"
           d="M242.9,209.4L242.9,209.4c-0.7-2.9,1-5.9,4-6.7l7.4-1.9
@@ -91,7 +91,7 @@ export default function hairDread(props: { color: string; colorRandom: boolean }
       </g>
       <g>
         <path
-          fill={(colorRandom && color) || 'black'}
+          fill={color || 'black'}
           stroke="#000000"
           stroke-width="3.82"
           d="M236.8,190.4L236.8,190.4c-0.7-2.9,1-5.9,4-6.7l7.4-1.9

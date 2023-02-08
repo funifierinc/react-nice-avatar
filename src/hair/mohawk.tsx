@@ -2,9 +2,9 @@ import React from "react";
 import chroma from "chroma-js";
 
 export default function hairMohawk(props: { color: string, colorRandom: boolean }): SVGElement {
-  const { color, colorRandom } = props;
-  const mainColor = colorRandom && color || "#171921";
-  const subColor = colorRandom && chroma(color).brighten(2) || "#717376";
+  const { color } = props;
+  const mainColor = color || "#171921";
+  const subColor = chroma(color).brighten(2) || "#717376";
   return (
     <svg
       style={{
