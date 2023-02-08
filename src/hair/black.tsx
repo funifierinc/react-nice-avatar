@@ -18,7 +18,7 @@ export default function hairBlack(props: { color: string; colorRandom: boolean }
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill={(colorRandom && color) || 'black'}
+        fill={color || 'black'}
         stroke="#000000"
         stroke-width="3.82"
         d="M34.1,247.2c17.5,35.9,52.1,58.2,85.2,70.3l-17.6-69.1

@@ -19,7 +19,7 @@ export default function hairDread(props: { color: string; colorRandom: boolean }
     >
       <g>
         <path
-          fill={(colorRandom && color) || 'black'}
+          fill={color || 'black'}
           stroke="#000000"
           stroke-width="3.82"
           d="M170.6,165.3L170.6,165.3c-7.8,2-15.8-2.8-17.8-10.6l-6.1-24.1
