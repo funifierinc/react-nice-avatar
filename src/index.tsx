@@ -126,4 +126,4 @@ export default class ReactNiceAvatar extends Component<NiceAvatarProps> {
   }
 }
 
-export { genConfig } from "./utils";
+export { genConfig, defaultOptions } from "./utils";

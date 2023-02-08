@@ -49,7 +49,7 @@ export const pickRandomFromList: PickRandomFromList = (data, { avoidList = [], u
 /**
  * Gennerate avatar configurations
  */
-interface DefaultOptions {
+export interface DefaultOptions {
   sex: Sex[],
   faceColor: string[],
   earSize: EarSize[],

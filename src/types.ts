@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { defaultOptions } from './utils';
+import { DefaultOptions } from './utils';
 
 type Style = {
   [key: string]: string | number | boolean
@@ -41,8 +41,6 @@ export interface AvatarFullConfig extends AvatarConfig {
   eyeBrowStyle?: EyeBrowStyle
 }
 
-export const AvatarDefaultOptions = defaultOptions;
-
 export interface NiceAvatarProps extends AvatarConfig {
   id?: string,
   className?: string,
@@ -53,5 +51,7 @@ export interface NiceAvatarProps extends AvatarConfig {
 export type GenConfigFunc = (config?: AvatarFullConfig | string) => Required<AvatarFullConfig>
 
 export declare const genConfig: GenConfigFunc
+
+export declare const defaultOptions : DefaultOptions
 
 export default class ReactNiceAvatar extends React.Component<NiceAvatarProps> {}
