@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { defaultOptions } from './utils';
 
 type Style = {
   [key: string]: string | number | boolean
@@ -39,6 +40,8 @@ export interface AvatarConfig {
 export interface AvatarFullConfig extends AvatarConfig {
   eyeBrowStyle?: EyeBrowStyle
 }
+
+export const AvatarDefaultOptions = defaultOptions;
 
 export interface NiceAvatarProps extends AvatarConfig {
   id?: string,
