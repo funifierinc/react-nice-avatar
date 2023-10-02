@@ -38,6 +38,7 @@ export default class AvatarEditor extends Component {
   // Modification on defaultOptions for convenient
   genDefaultOptions (opts) {
     const hairSet = new Set(opts.hairStyleMan.concat(opts.hairStyleWoman))
+    console.log(hairSet)
     return {
       ...opts,
       hairStyle: Array.from(hairSet)
@@ -47,6 +48,7 @@ export default class AvatarEditor extends Component {
   switchConfig (type, currentOpt) {
     const { updateConfig } = this.props
     const opts = this.myDefaultOptions[type]
+    console.log(defaultOptions)
     const currentIdx = opts.findIndex(item => item === currentOpt)
     const newIdx = (currentIdx + 1) % opts.length
     updateConfig(type, opts[newIdx])
